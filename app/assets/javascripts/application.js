@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$( document ).on('turbolinks:load', function() {
+	$(".search").on("click", function() {
+		$(".live-search").show(); 
+	});
+	$(".close").on("click", function() {
+		$(".live-search").hide(); 
+	});
+	$(document).keyup(function(e) {
+  		if (e.keyCode === 27) $('.live-search').hide();   // esc
+	});
+});

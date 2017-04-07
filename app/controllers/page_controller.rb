@@ -25,4 +25,7 @@ class PageController < ApplicationController
 
   def log_in
   end
+
+  def music
+  end
 end
