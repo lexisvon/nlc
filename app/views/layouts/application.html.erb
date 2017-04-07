@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>The Nightlife Company | Omaha</title>
+	<%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom Stylesheet -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="img/icons/favicon.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/icons/favicon.png" sizes="16x16" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="wrapper">
+      <nav class="navbar navbar-inverse navbar-static-top container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">NightlifeCo</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#"><img class="navbar-brand" src="img/icons/logo.png" alt="NightlifeCo"></a>
+          <img src="img/icons/search.png" alt="search" width="20">
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="near-me.php">Near Me</a></li>
+            <li><a href="events.php">Events</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#venues">Venues</a></li>
+            <li><a href="photos.php">Photos</a></li>
+            <li><a href="happy-hr.php">Happy Hour</a></li>
+            <li><a href="whats-hot.php">What's Hot</a></li>
+            <li><a href="http://tickets.nightlifeco.com/" target="_blank">Tickets</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="log-in.php">Log In</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+	<%= yield %>
+    <footer>
+      <div class="container text-center">
+        <h3>Contact Us</h3>
+        <p>4521 Leavenworth Street, Suite 16
+Omaha, NE 68123</p>
+        <p>402-682-7117</p>
+      </div>
+      <div class="container text-center text-uppercase">
+        <h4>Sign up for our weekly newsletter</h4>
+        <form>
+          <label>Email</label>
+          <input type="email" name="email">
+          <a href="#">Subscribe</a>
+        </form>
+      </div>
+      <div class="container">
+        <div>© 2017 The Nightlife Company, LLC. All rights reserved.</div>
+        <div></div>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript CDN-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Custom Js -->
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
