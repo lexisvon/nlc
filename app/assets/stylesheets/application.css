@@ -137,8 +137,9 @@ h2, h3 {
 }
 .hpy-hr-home {
 	background-image: url(https://placeholdit.imgix.net/~text?txtsize=25&txt=400%C3%97100&w=400&h=100);
-
+	display: block;
 }
+
 /*--------------------------------------------------------------
 5.0 - UTILITY
 -------------------------------------------------------------- */
