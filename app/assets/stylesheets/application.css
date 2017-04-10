@@ -36,13 +36,18 @@
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
+
 /*-- 1.1 - Headings --*/
 .intro {
 	margin-top: 15rem;
-
 }
+
 h2, h3 {
 	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 1.8rem;
 }
 /*-- 1.2 - Body Copy --*/
 /*-- 1.3 - Buttons --*/
@@ -67,7 +72,31 @@ h2, h3 {
     background-color: grey;
     opacity: .5;
 }
+.cta-button, .newsletter a {
+	color: #fff;
+	background-color: #002856;
+	padding: 10px 20px;
+	text-transform: uppercase;
+}
+a {
+	color: #002856;
+}
+.cta-button:hover, .newsletter a:hover {
+	color: #fff;
+	background-color: #95d600;
+	text-decoration: none;
+}
+
+.cta-button {
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
 /*-- 1.4 - Forms --*/
+.newsletter label{
+	display: none;
+}
+
 /*--------------------------------------------------------------
 2.0 - NAVIGATION MENUS
 -------------------------------------------------------------- */
@@ -78,7 +107,8 @@ h2, h3 {
 }
 .navbar-toggle {
 	float: left;
-	margin-left: 20px;
+	margin-right: 0;
+	padding: 0;
 }
 .navbar-inverse {
 	background-color: #002856;
@@ -138,6 +168,11 @@ h2, h3 {
 .hpy-hr-home {
 	background-image: url(https://placeholdit.imgix.net/~text?txtsize=25&txt=400%C3%97100&w=400&h=100);
 	display: block;
+}
+
+.map {
+	background-image: url(https://placeholdit.imgix.net/~text?txtsize=28&txt=300%C3%97150&w=300&h=150);
+	height: 150px;
 }
 
 /*--------------------------------------------------------------
