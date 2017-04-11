@@ -149,8 +149,7 @@ a {
 /*-- 13.2 - Columns --*/
 .col-xs-6 {
 	width: 50%;
-	height: 40px;
-	background-color: pink;
+	height: 150px;
 }
 .col-md-1 {
 	width: 50px
@@ -175,6 +174,11 @@ a {
 	height: 150px;
 }
 
+.f-v-1 {
+	background-image: url(https://placeholdit.imgix.net/~text?txtsize=14&txt=150%C3%97150&w=150&h=150);
+	height: 150px;
+	border: 1px solid black;
+}
 /*--------------------------------------------------------------
 5.0 - UTILITY
 -------------------------------------------------------------- */
